@@ -46,9 +46,9 @@ export default {
       return this.msg.split('').reverse().join();
     },
     envsample() {
-      console.log(`${process.env.VUE_APP_HOGEENV}`);
-      console.log(`${process.env.NODE_ENV}`);
-      console.log(`${process.env.BASE_URL}`);
+      console.log(`${process.env.VUE_APP_HOGEENV}`)
+      //console.log(`${process.env.NODE_ENV}`);
+      //console.log(`${process.env.BASE_URL}`);
       return `${process.env.VUE_APP_HOGEENV} ${process.env.VUE_APP_XXX}`;
     },
   },
