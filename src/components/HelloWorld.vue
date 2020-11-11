@@ -2,8 +2,8 @@
   <div class="hello">
     <h1>{{ reversedMessage }}</h1>
     <p>
-      vsample
-      {{ envsample }}
+      evsample is:
+      "{{ envsample }}"
       Forrrrrrr a guide and recipes on how to configure / customize this project,<br>
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
@@ -46,9 +46,9 @@ export default {
       return this.msg.split('').reverse().join();
     },
     envsample() {
-      console.log(`${process.env.VUE_APP_HOGEENV}`)
-      //console.log(`${process.env.NODE_ENV}`);
-      //console.log(`${process.env.BASE_URL}`);
+      console.log(`${process.env.VUE_APP_HOGEENV}`);
+      // console.log(`${process.env.NODE_ENV}`);
+      // console.log(`${process.env.BASE_URL}`);
       return `${process.env.VUE_APP_HOGEENV} ${process.env.VUE_APP_XXX}`;
     },
   },
