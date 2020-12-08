@@ -1,5 +1,8 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button @click="onclick">sub</button>
+  </div>
 </template>
 
 <script>
@@ -9,6 +12,11 @@ export default {
   name: 'Main',
   components: {
     HelloWorld,
+  },
+  methods: {
+    onclick() {
+      window.open('sub1.html', 'サブ画面', 'height=200,width=200');
+    },
   },
 };
 </script>
