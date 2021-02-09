@@ -1,4 +1,5 @@
 module.exports = {
+  outputDir: 'docs',
   pages: {
     main: {
       entry: 'src/pages/main/main.js',
